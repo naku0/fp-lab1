@@ -1,7 +1,7 @@
 # lab1
 
-* `src/FirstAlgo` -- модуль с 1 задачей из [ProjectEuler](https://projecteuler.net/problem=1)
-* `src/SecondAlgo` -- модуль с 30 задачей из [ProjectEuler](https://projecteuler.net/problem=30)
+* [`src/FirstAlgo`](https://github.com/naku0/fp-lab1/blob/main/src/FirstAlgo.hs) -- модуль с 1 задачей из [ProjectEuler](https://projecteuler.net/problem=1)
+* [`src/SecondAlgo`](https://github.com/naku0/fp-lab1/blob/main/src/SecondAlgo.hs) -- модуль с 30 задачей из [ProjectEuler](https://projecteuler.net/problem=30)
 
 ## Разберем подробнее задание:
 
