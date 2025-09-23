@@ -41,7 +41,7 @@ mapiCapiFunction n = sum $ (\x -> if mod x 3 == 0 || mod x 5 == 0 then x else 0)
 
 --5
 listComprehenter :: Int -> Int
-listComprehenter n = sum [x | x <-[1..n-1], mod x 3 == 0 || mod x 5 == 0 ]
+listComprehenter n = sum $ takeWhile (< n) [x | x <-[1..], mod x 3 == 0 || mod x 5 == 0 ]
  
 
 --answer = 233168
