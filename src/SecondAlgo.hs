@@ -3,8 +3,7 @@ module SecondAlgo (
     linearRecursion,
     mapop,
     folding, 
-    listiik, 
-    help,
+    listiik,
 ) where
 
 import Data.Char (digitToInt)
