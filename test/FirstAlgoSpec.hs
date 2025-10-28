@@ -1,12 +1,11 @@
 module FirstAlgoSpec (spec) where
 
-import Test.Hspec
-import Test.HUnit (assertEqual)
 import FirstAlgo
+import Test.HUnit (assertEqual)
+import Test.Hspec
 
 spec :: Spec
 spec = describe "1st euler task" $ do
-
   describe "1.1) recursionActivator" $ do
     it "input 10 should return 23" $
       recursionActivator 10 `shouldBe` 23
@@ -62,67 +61,73 @@ spec = describe "1st euler task" $ do
   describe "all implementations should be equivalent" $ do
     it "all functions return same result for n=10" $ do
       let n = 10
-      let results = [ sumMultiplier n
-                    , listComprehenter n
-                    , recursionActivator n
-                    , tailRecursioninator n
-                    , mapiCapiFunction n
-                    , filterLitterRikiTikiGitter n
-                    ]
+      let results =
+            [ sumMultiplier n,
+              listComprehenter n,
+              recursionActivator n,
+              tailRecursioninator n,
+              mapiCapiFunction n,
+              filterLitterRikiTikiGitter n
+            ]
       all (== head results) results `shouldBe` True
 
     it "all functions return same result for n=20" $ do
       let n = 20
-      let results = [ sumMultiplier n
-                    , listComprehenter n
-                    , recursionActivator n
-                    , tailRecursioninator n
-                    , mapiCapiFunction n
-                    , filterLitterRikiTikiGitter n
-                    ]
+      let results =
+            [ sumMultiplier n,
+              listComprehenter n,
+              recursionActivator n,
+              tailRecursioninator n,
+              mapiCapiFunction n,
+              filterLitterRikiTikiGitter n
+            ]
       all (== head results) results `shouldBe` True
 
     it "all functions return same result for n=1000" $ do
       let n = 1000
-      let results = [ sumMultiplier n
-                    , listComprehenter n
-                    , recursionActivator n
-                    , tailRecursioninator n
-                    , mapiCapiFunction n
-                    , filterLitterRikiTikiGitter n
-                    ]
+      let results =
+            [ sumMultiplier n,
+              listComprehenter n,
+              recursionActivator n,
+              tailRecursioninator n,
+              mapiCapiFunction n,
+              filterLitterRikiTikiGitter n
+            ]
       all (== 233168) results `shouldBe` True
 
   describe "edge cases" $ do
     it "all functions return 0 for n=1" $ do
       let n = 1
-      let results = [ sumMultiplier n
-                    , listComprehenter n
-                    , recursionActivator n
-                    , tailRecursioninator n
-                    , mapiCapiFunction n
-                    , filterLitterRikiTikiGitter n
-                    ]
+      let results =
+            [ sumMultiplier n,
+              listComprehenter n,
+              recursionActivator n,
+              tailRecursioninator n,
+              mapiCapiFunction n,
+              filterLitterRikiTikiGitter n
+            ]
       all (== 0) results `shouldBe` True
 
     it "all functions return 0 for n=3" $ do
       let n = 3
-      let results = [ sumMultiplier n
-                    , listComprehenter n
-                    , recursionActivator n
-                    , tailRecursioninator n
-                    , mapiCapiFunction n
-                    , filterLitterRikiTikiGitter n
-                    ]
+      let results =
+            [ sumMultiplier n,
+              listComprehenter n,
+              recursionActivator n,
+              tailRecursioninator n,
+              mapiCapiFunction n,
+              filterLitterRikiTikiGitter n
+            ]
       all (== 0) results `shouldBe` True
 
     it "all functions return 3 for n=5" $ do
       let n = 5
-      let results = [ sumMultiplier n
-                    , listComprehenter n
-                    , recursionActivator n
-                    , tailRecursioninator n
-                    , mapiCapiFunction n
-                    , filterLitterRikiTikiGitter n
-                    ]
+      let results =
+            [ sumMultiplier n,
+              listComprehenter n,
+              recursionActivator n,
+              tailRecursioninator n,
+              mapiCapiFunction n,
+              filterLitterRikiTikiGitter n
+            ]
       all (== 3) results `shouldBe` True

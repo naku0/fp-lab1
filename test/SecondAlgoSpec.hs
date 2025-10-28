@@ -1,12 +1,11 @@
 module SecondAlgoSpec (spec) where
 
-import Test.Hspec
-import Test.HUnit (assertBool)
 import SecondAlgo
+import Test.HUnit (assertBool)
+import Test.Hspec
 
 spec :: Spec
 spec = describe "30th euler task" $ do
-
   describe "all implementations should return correct answer" $ do
     it "1.1) task returns 443839" $
       recursion `shouldBe` 443839
