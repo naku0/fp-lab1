@@ -39,4 +39,5 @@ mapop = sum $ (\x -> if x == help x then x else 0) <$> [2..6*(9^5)]
 --5
 listiik :: Int
 listiik = sum [x | x <- takeWhile (<= 6*(9^5)) [2..], x == help x]
+
 --answer 443839
