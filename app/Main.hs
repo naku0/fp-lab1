@@ -1,7 +1,7 @@
 module Main (main) where
 
-import FirstAlgo ( sumMultiplier )
-import SecondAlgo ( recursion )
+import FirstAlgo (sumMultiplier)
+import SecondAlgo (recursion)
 
 main :: IO ()
 main = do
